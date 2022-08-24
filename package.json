@@ -8,7 +8,6 @@
 		"require": "./lib/react-leaflet-marker.cjs",
 		"default": "./lib/react-leaflet-marker.modern.js"
 	},
-	"main": "lib/react-leaflet-marker.cjs",
 	"module": "lib/react-leaflet-marker.module.js",
 	"unpkg": "lib/react-leaflet-marker.umd.js",
 	"types": "lib/index.d.ts",
