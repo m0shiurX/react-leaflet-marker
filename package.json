@@ -1,107 +1,104 @@
 {
-  "name": "react-leaflet-marker",
-  "version": "1.1.4",
-  "description": "",
-  "source": "src/index.ts",
-  "type": "module",
-  "exports": {
-    "require": "./lib/react-leaflet-marker.cjs",
-    "default": "./lib/react-leaflet-marker.modern.js"
-  },
-  "main": "lib/react-leaflet-marker.cjs",
-  "module": "lib/react-leaflet-marker.module.js",
-  "unpkg": "lib/react-leaflet-marker.umd.js",
-  "types": "lib/index.d.ts",
-  "keywords": [
-    "react",
-    "npm",
-    "leaflet",
-    "react-leaflet",
-    "marker"
-  ],
-  "dependencies": {
-    "classnames": "^2"
-  },
-  "peerDependencies": {
-    "@react-leaflet/core": "^1.0.0",
-    "react-leaflet": "^3.0.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
-  },
-  "devDependencies": {
-    "@babel/preset-react": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
-    "@react-leaflet/core": "^1.0.0",
-    "@size-limit/preset-small-lib": "^7.0.8",
-    "@storybook/addon-actions": "^6.4.22",
-    "@storybook/addon-essentials": "^6.4.22",
-    "@storybook/addon-interactions": "^6.4.22",
-    "@storybook/addon-jest": "^6.4.22",
-    "@storybook/addon-links": "^6.4.22",
-    "@storybook/react": "^6.4.22",
-    "@storybook/testing-library": "0.0.11",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.5",
-    "@testing-library/react-hooks": "^8.0.0",
-    "@types/jest": "^27.4.1",
-    "@types/leaflet": "^1.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.21.0",
-    "@typescript-eslint/parser": "^5.21.0",
-    "eslint": "^8.14.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "husky": "^7.0.4",
-    "jest": "^28.0.3",
-    "jest-css-modules": "^2.1.0",
-    "jest-environment-jsdom": "^28.0.2",
-    "leaflet": "^1.8.0",
-    "microbundle": "^0.15.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
-    "react-leaflet": "^3.0.0",
-    "size-limit": "^7.0.8",
-    "storybook-css-modules-preset": "^1.1.1"
-  },
-  "scripts": {
-    "build": "rm -rf ./lib/*; microbundle build --tsconfig tsconfig.build.json && size-limit",
-    "dev": "start-storybook -p 6006",
-    "prepare": "husky install",
-    "test": "jest",
-    "test:watch": "jest --json --outputFile=.jest-test-results.json --watch",
-    "eslint": "eslint \"src/**\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/holytrips/react-leaflet-marker.git"
-  },
-  "author": "Valentin Kruglikov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/holytrips/react-leaflet-marker/issues"
-  },
-  "homepage": "https://github.com/holytrips/react-leaflet-marker#readme",
-  "size-limit": [
-    {
-      "path": "lib/react-leaflet-marker.cjs",
-      "limit": "150 KB"
-    }
-  ],
-  "jest": {
-    "testEnvironment": "jsdom",
-    "modulePathIgnorePatterns": [
-      "node_modules",
-      "jest-test-results.json"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
-    }
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "IE 10"
-  ]
+	"name": "react-leaflet-markers",
+	"version": "1.1.5",
+	"description": "",
+	"source": "src/index.ts",
+	"type": "module",
+	"exports": {
+		"require": "./lib/react-leaflet-marker.cjs",
+		"default": "./lib/react-leaflet-marker.modern.js"
+	},
+	"main": "lib/react-leaflet-marker.cjs",
+	"module": "lib/react-leaflet-marker.module.js",
+	"unpkg": "lib/react-leaflet-marker.umd.js",
+	"types": "lib/index.d.ts",
+	"keywords": [
+		"react",
+		"npm",
+		"leaflet",
+		"react-leaflet",
+		"marker"
+	],
+	"dependencies": {
+		"classnames": "^2"
+	},
+	"peerDependencies": {
+		"react": "^17.0.0 || ^18.2.0",
+		"react-dom": "^17.0.0 || ^18.2.0",
+		"react-leaflet": "^3.0.0 || ^4.0.0"
+	},
+	"devDependencies": {
+		"@babel/preset-react": "^7.18.6",
+		"@babel/preset-typescript": "^7.18.6",
+		"@size-limit/preset-small-lib": "^8.0.1",
+		"@storybook/addon-actions": "^6.5.10",
+		"@storybook/addon-essentials": "^6.5.10",
+		"@storybook/addon-interactions": "^6.5.10",
+		"@storybook/addon-jest": "^6.5.10",
+		"@storybook/addon-links": "^6.5.10",
+		"@storybook/react": "^6.5.10",
+		"@storybook/testing-library": "0.0.13",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.3.0",
+		"@types/jest": "^28.1.7",
+		"@types/leaflet": "^1.7.11",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.34.0",
+		"@typescript-eslint/parser": "^5.34.0",
+		"eslint": "^8.22.0",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"husky": "^8.0.1",
+		"jest": "^28.1.3",
+		"jest-css-modules": "^2.1.0",
+		"jest-environment-jsdom": "^28.1.3",
+		"leaflet": "^1.8.0",
+		"microbundle": "^0.15.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-leaflet": "^4.0.2",
+		"size-limit": "^8.0.1",
+		"storybook-css-modules-preset": "^1.1.1"
+	},
+	"scripts": {
+		"build": "rm -rf ./lib/*; microbundle build --tsconfig tsconfig.build.json && size-limit",
+		"dev": "start-storybook -p 6006",
+		"prepare": "husky install",
+		"test": "jest",
+		"test:watch": "jest --json --outputFile=.jest-test-results.json --watch",
+		"eslint": "eslint \"src/**\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/m0shiurX/react-leaflet-marker.git"
+	},
+	"author": "Valentin Kruglikov",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/m0shiurX/react-leaflet-marker/issues"
+	},
+	"homepage": "https://github.com/m0shiurX/react-leaflet-marker#readme",
+	"size-limit": [
+		{
+			"path": "lib/react-leaflet-marker.cjs",
+			"limit": "150 KB"
+		}
+	],
+	"jest": {
+		"testEnvironment": "jsdom",
+		"modulePathIgnorePatterns": [
+			"node_modules",
+			"jest-test-results.json"
+		],
+		"moduleNameMapper": {
+			"\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
+		}
+	},
+	"browserslist": [
+		"last 1 version",
+		"> 1%",
+		"IE 10"
+	]
 }
