@@ -8,6 +8,7 @@
 		"require": "./lib/react-leaflet-marker.cjs",
 		"default": "./lib/react-leaflet-marker.modern.js"
 	},
+	"main": "lib/react-leaflet-marker.cjs",
 	"module": "lib/react-leaflet-marker.module.js",
 	"unpkg": "lib/react-leaflet-marker.umd.js",
 	"types": "lib/index.d.ts",
@@ -62,7 +63,7 @@
 		"storybook-css-modules-preset": "^1.1.1"
 	},
 	"scripts": {
-		"build": "rm -rf ./lib/*; microbundle build --tsconfig tsconfig.build.json && size-limit",
+		"build": "rm -rf ./lib/*; microbundle build",
 		"dev": "start-storybook -p 6006",
 		"prepare": "husky install",
 		"test": "jest",
